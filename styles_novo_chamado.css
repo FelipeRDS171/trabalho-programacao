@@ -1,0 +1,112 @@
+/* Fundo com gradiente atualizado */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00aaff, #4caf50);
+    animation: background-slide 10s infinite alternate ease-in-out;
+}
+
+/* Animação para o background */
+@keyframes background-slide {
+    0% { background: linear-gradient(135deg, #00aaff, #4caf50); }
+    100% { background: linear-gradient(135deg, #4caf50, #00aaff); }
+}
+
+/* Container do formulário com animação */
+.chamado-container {
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+    padding: 45px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    animation: fade-in 0.5s ease-out;
+}
+
+/* Animação de fade-in para o contêiner */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos do formulário */
+form label {
+    display: block;
+    margin: 12px 0 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de foco nos campos */
+form input:focus, form textarea:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botão de envio com efeito de animação */
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #00aaff, #4caf50);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #0099dd, #43a047);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de retorno */
+.button-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    color: #fff;
+    background: linear-gradient(135deg, #6c757d, #555b60);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button-back:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}

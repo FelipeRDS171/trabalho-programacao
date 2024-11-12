@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Atendimento</title>
+    <link rel="stylesheet" href="styles_novo_chamado.css">
+</head>
+<body>
+    <div class="chamado-container fade-in">
+        <h1>Solicitar Suporte</h1>
+        <form>
+            <label for="titulo">Título do Problema</label>
+            <input type="text" id="titulo" name="titulo" required placeholder="Digite o título do problema">
+
+            <label for="descricao">Descrição Detalhada</label>
+            <textarea id="descricao" name="descricao" required placeholder="Descreva o problema com detalhes"></textarea>
+
+            <button type="submit" class="button">Enviar Solicitação</button>
+        </form>
+        <a href="dashboard.html" class="button-back">Voltar</a>
+    </div>
+</body>
+</html>
